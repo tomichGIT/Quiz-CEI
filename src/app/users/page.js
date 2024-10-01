@@ -17,6 +17,11 @@ import { BtnAddUser } from "./BtnAddUser"
  *  - Para usar dichas funcionalidades, debes crear un componente hijo que tenga "use client" y enviarle la información como prop
  */
 
+export const metadata = {
+    title: 'Users Section',
+    description: 'Aplicación de quiz para estudiantes de CEI',
+}
+
 const Users = async () => {
 
     const users = await getUsers();
